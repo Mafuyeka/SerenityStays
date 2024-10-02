@@ -3,7 +3,10 @@ from .models import Property
 import stripe
 from django.conf import settings
 
-stripe.api_key = settings.STRIPE_SECRET_KEY
+stripe.api_key =  "sk_test_51Q02leEvFmUjZecbAq6t6b2lJfGpWirgYCIdv60GrM7TfA9cdVLP6q9XeJVpGYnSntTogEdvdGcvvxb2navO7PSK00jCbae43W"
+
+def home(request):
+    return render(request, 'listing/home.html')
 
 def property_list(request):
     properties = Property.objects.all()
