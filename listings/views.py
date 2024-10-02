@@ -3,14 +3,10 @@ from .models import Property
 import stripe
 from django.conf import settings
 
-<<<<<<< HEAD
-stripe.api_key = "sk_test_51Q02leEvFmUjZecbAq6t6b2lJfGpWirgYCIdv60GrM7TfA9cdVLP6q9XeJVpGYnSntTogEdvdGcvvxb2navO7PSK00jCbae43W"
-=======
 stripe.api_key =  "sk_test_51Q02leEvFmUjZecbAq6t6b2lJfGpWirgYCIdv60GrM7TfA9cdVLP6q9XeJVpGYnSntTogEdvdGcvvxb2navO7PSK00jCbae43W"
 
 def home(request):
     return render(request, 'listing/home.html')
->>>>>>> 759be98281c0adedc6433711c21b3a3889ed162c
 
 def property_list(request):
     properties = Property.objects.all()
